@@ -1,0 +1,48 @@
+diff --git a/fibonacci.py b/fibonacci.py
+new file mode 100644
+index 0000000..ffbdece
+--- /dev/null
++++ b/fibonacci.py
+@@ -0,0 +1,25 @@
++# Program to display the Fibonacci sequence up to n-th term
++
++nterms = int(input("How many terms? "))
++
++# first two terms
++n1, n2 = 0, 1
++count = 0
++
++# check if the number of terms is valid
++if nterms <= 0:
++   print("Please enter a positive integer")
++# if there is only one term, return n1
++elif nterms == 1:
++   print("Fibonacci sequence upto",nterms,":")
++   print(n1)
++# generate fibonacci sequence
++else:
++   print("Fibonacci sequence:")
++   while count < nterms:
++       print(n1)
++       nth = n1 + n2
++       # update values
++       n1 = n2
++       n2 = nth
++       count += 1
+diff --git a/nagulfile1.patch b/nagulfile1.patch
+new file mode 100644
+index 0000000..e69de29
+diff --git a/neeraj.txt b/neeraj.txt
+index 7aec98d..5b98491 100644
+--- a/neeraj.txt
++++ b/neeraj.txt
+@@ -1 +1,6 @@
+ Inserting first file
++
++Welcome To Neeraj Teaching Class
++
++Hello Come here
++Welcome
+diff --git a/neerajfile1.patch b/neerajfile1.patch
+new file mode 100644
+index 0000000..e69de29
