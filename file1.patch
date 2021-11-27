@@ -1,0 +1,57 @@
+diff --git a/factorial.c b/factorial.c
+deleted file mode 100644
+index 1663258..0000000
+--- a/factorial.c
++++ /dev/null
+@@ -1,12 +0,0 @@
+-#include<stdio.h>  
+-int main()    
+-{    
+- int i,fact=1,number;    
+- printf("Enter a number: ");    
+-  scanf("%d",&number);    
+-    for(i=1;i<=number;i++){    
+-      fact=fact*i;    
+-  }    
+-  printf("Factorial of %d is: %d",number,fact);    
+-return 0;  
+-}   
+diff --git a/fibonacci.py b/fibonacci.py
+new file mode 100644
+index 0000000..ffbdece
+--- /dev/null
++++ b/fibonacci.py
+@@ -0,0 +1,25 @@
++# Program to display the Fibonacci sequence up to n-th term
++
++nterms = int(input("How many terms? "))
++
++# first two terms
++n1, n2 = 0, 1
++count = 0
++
++# check if the number of terms is valid
++if nterms <= 0:
++   print("Please enter a positive integer")
++# if there is only one term, return n1
++elif nterms == 1:
++   print("Fibonacci sequence upto",nterms,":")
++   print(n1)
++# generate fibonacci sequence
++else:
++   print("Fibonacci sequence:")
++   while count < nterms:
++       print(n1)
++       nth = n1 + n2
++       # update values
++       n1 = n2
++       n2 = nth
++       count += 1
+diff --git a/nagul.txt b/nagul.txt
+deleted file mode 100644
+index 4ccd292..0000000
+--- a/nagul.txt
++++ /dev/null
+@@ -1,2 +0,0 @@
+-Inserting New File
+-Welcome Here
